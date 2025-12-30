@@ -69,17 +69,15 @@ export const Hero = () => {
           className="relative max-w-4xl mx-auto rounded-2xl p-0.5 bg-gradient-to-b from-brand-accent/20 to-transparent backdrop-blur-sm mb-24"
         >
           <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
-             <div className="absolute inset-0 bg-brand-900/40 backdrop-blur-[1px]" />
-            
-            {/* Play Button */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-24 h-24 bg-brand-accent/20 rounded-full flex items-center justify-center backdrop-blur-md border border-brand-accent/30 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_rgba(14,165,233,0.3)]">
-                <div className="w-20 h-20 bg-brand-accent rounded-full flex items-center justify-center shadow-lg shadow-brand-accent/50 relative">
-                   <div className="absolute inset-0 rounded-full animate-ping opacity-25 bg-white"></div>
-                  <Play className="w-8 h-8 text-white ml-1 fill-white" />
-                </div>
-              </div>
-            </div>
+             <iframe 
+                id="panda-f9db10ec-7e3a-44f4-b4da-fd4b73ac5d68" 
+                src="https://player-vz-16affdf7-47d.tv.pandavideo.com.br/embed/?v=f9db10ec-7e3a-44f4-b4da-fd4b73ac5d68" 
+                style={{ border: 'none' }} 
+                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
+                allowFullScreen={true} 
+                className="w-full h-full absolute inset-0"
+                fetchPriority="high"
+             />
           </div>
         </motion.div>
 
