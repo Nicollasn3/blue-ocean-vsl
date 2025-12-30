@@ -76,6 +76,7 @@ export const Hero = () => {
                 allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
                 allowFullScreen={true} 
                 className="w-full h-full absolute inset-0"
+                // @ts-ignore
                 fetchPriority="high"
              />
           </div>
